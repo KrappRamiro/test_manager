@@ -1,14 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
    <h1>Dynamic Form</h1>
-   <form id="dynamic-form">
+   <div id="no-forms-message">There are no forms!</div>
+   <form id="dynamic-form" enctype="multipart/form-data">
       <div id="form-fields">
-         <div class="form-field">
-            <hr>
-            <h3>Form 1</h3>
-            <label for="name1">Name</label>
-            <input type="text" name="name1" id="name1" required>
-         </div>
+         <!-- No initial forms -->
       </div>
       <button type="button" id="add-form-btn">Add Form</button>
       <button type="submit">Submit</button>
