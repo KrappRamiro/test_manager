@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+   <h1>Dynamic Form</h1>
+   <form id="dynamic-form">
+      <div id="form-fields">
+         <div class="form-field">
+            <hr>
+            <h3>Form 1</h3>
+            <label for="name1">Name</label>
+            <input type="text" name="name1" id="name1" required>
+         </div>
+      </div>
+      <button type="button" id="add-form-btn">Add Form</button>
+      <button type="submit">Submit</button>
+   </form>
+   <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% endblock content %}
