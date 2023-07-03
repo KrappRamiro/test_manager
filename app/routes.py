@@ -7,7 +7,14 @@ app.config["SECRET_KEY"] = "your_secret_key_here"
 
 @app.route("/")
 def index():
+    # Que aca te deje seleccionar que proyecto queres ver
     return render_template("index.html")
+
+
+@app.route("/apps/<int:id>/")
+def proyecto(id):
+    # get the tests from the db
+    return f"Viendo el proyecto: {id}"
 
 
 @app.route("/process-form/", methods=["GET", "POST"])

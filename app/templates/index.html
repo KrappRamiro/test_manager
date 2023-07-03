@@ -1,15 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
    <div class="container">
-      <h1>Dynamic Form</h1>
+      <h1 class="display-1 text-center">Test Manager</h1>
       <div id="no-forms-message">There are no forms!</div>
       <form id="dynamic-form" enctype="multipart/form-data">
          <div id="form-fields">
             <!-- No initial forms -->
          </div>
-         <button type="button" id="add-form-btn">Add Form</button>
-         <button type="submit">Submit</button>
+         <button type="button" id="add-form-btn" class="btn btn-primary">Añadir test</button>
+         <button type="button" class="btn btn-success">Correr Tests</button>
+         <button type="submit" class="btn btn-secondary">Submit</button>
       </form>
    </div>
-   <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/submit.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/addTestCard.js') }}"></script>
 {% endblock content %}
