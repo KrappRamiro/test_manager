@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	let formFieldsContainer = document.getElementById("form-fields");
 	let noFormsMessage = document.getElementById("no-forms-message");
 
-	console.log("DOM content loaded");
-
 	// Event listener for adding a new form field
 	addFormButton.addEventListener("click", function () {
 		console.log("Add Form button clicked");

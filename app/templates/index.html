@@ -8,10 +8,11 @@
             <!-- No initial forms -->
          </div>
          <button type="button" id="add-form-btn" class="btn btn-primary">Añadir test</button>
-         <button type="button" class="btn btn-success">Correr Tests</button>
-         <button type="submit" class="btn btn-secondary">Submit</button>
+         <button type="button" id="run-tests-btn" class="btn btn-success">Correr Tests</button>
+         <button type="submit" class="btn btn-secondary">Guardar</button>
       </form>
    </div>
    <script src="{{ url_for('static', filename='js/submit.js') }}"></script>
    <script src="{{ url_for('static', filename='js/addTestCard.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/runTests.js') }}"></script>
 {% endblock content %}

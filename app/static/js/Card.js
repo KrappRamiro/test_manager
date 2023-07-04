@@ -31,7 +31,7 @@ class Card {
 
 		const statusIndicator = document.createElement("div");
 		statusIndicator.id += `card-${this.cardCount + 1}-status-indicator`;
-		statusIndicator.classList.add("ms-auto");
+		statusIndicator.classList.add("ms-auto", "card-status-indicator");
 
 		// ------------- Card Header Construction --------------- //
 		cardHeader.appendChild(cardTitle);
