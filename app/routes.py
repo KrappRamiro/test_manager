@@ -11,12 +11,6 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/apps/<int:id>/")
-def proyecto(id):
-    # get the tests from the db
-    return f"Viendo el proyecto: {id}"
-
-
 @app.route("/process-form/", methods=["GET", "POST"])
 def process_form():
     form_data = {}
